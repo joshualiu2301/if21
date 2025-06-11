@@ -45,7 +45,7 @@ class ProdiController extends Controller
 
         // redirect ke route fakultas.index
         return redirect()->route('prodi.index')
-                         ->with('success', 'Program studi berhasil disimpan');
+                         ->with('Berhasil', 'Program studi berhasil disimpan');
     }
 
     /**
@@ -84,7 +84,7 @@ class ProdiController extends Controller
 
         // redirect ke route fakultas.index
         return redirect()->route('prodi.index')
-                         ->with('success', 'Program studi berhasil diubah');
+                         ->with('berhasil', 'Program studi berhasil diubah');
     }
 
     /**
