@@ -39,12 +39,11 @@ class MateriController extends Controller
             $materi->file_materi = $filename;
         }
         $materi->save();
-        return redirect()->route('materi.index')->with('success', 'Materi created successfully.');
+        return redirect()->route('materi.index')->with('berhasil', 'Materi Berhasil Diupload.');
     }
 
     public function show($id)
     {
-        // Logic to display a specific materi
         return view('materi.show', compact('id'));
     }
 
